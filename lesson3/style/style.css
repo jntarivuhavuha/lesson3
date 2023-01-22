@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #023047;
+    color: rgb(1, 1, 73);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+header h1 {
+    color: white;
+    font-family: "Abril Fatface";
+    font-weight: 10;
+    font-size: 40px;
+}
+header h2 {
+    font-size: 25px;
+}
+
+nav a {
+    text-align:center;
+    color:blue;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+background-color: white;
+border-radius: 40px;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    justify-items: center;
+    padding: 0;
+}
+nav ul li {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 50px;
+}
+section {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.principle {
+    margin: 10px;
+}
+section h3 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(8, 80, 173);
+    padding: 10px;
+    margin: 0;
+    text-decoration-line;
+    border-radius: 20px;
+}
+section h4 {
+    font-size: 18px;
+    color:rgb(1, 1, 73);
+    padding: 10px;
+    margin: 0;
+}
+section a {
+    color: rgb(5, 20, 230);
+    text-decoration: none;
+    padding: 10px;
+}
+section p {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    color:rgb(1, 1, 73);
+}
+section img {
+    display: block;
+    max-width: 90%;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #023047;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 550px) { 
+/* beginning of media query */
+  
+    .home-grid, .FAQ-grid, footer {
+    display: block;
+    }
+
+  .home-left-img, .home-right-img{
+    margin: 0;
+  }
+  
+  
+/* end of media query */ 
+} 
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
